@@ -192,8 +192,6 @@ header .container nav ul li a {
   z-index: 9;
 }
 
-
-
 .landing .container .content {
   display: flex;
   align-items: center;
@@ -505,6 +503,11 @@ header .container nav ul li a {
   .portfolio .container {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
+
+  .portfolio .container .col .card {
+    text-align: center;
+    padding: 28px 0px;
+  }
 }
 /* End portfolio */
 
@@ -529,13 +532,13 @@ header .container nav ul li a {
 .about .content h2 {
   font-size: 60px;
   font-weight: 600;
-  line-height: 84px;
   transform: translatex(-150px);
   -webkit-transform: translatex(-150px);
   -moz-transform: translatex(-150px);
   -ms-transform: translatex(-150px);
   -o-transform: translatex(-150px);
   white-space: nowrap;
+  width: fit-content;
 }
 
 .about .content h3 {
@@ -551,13 +554,15 @@ header .container nav ul li a {
   font-weight: 300;
   line-height: 32px;
   color: var(--text-color);
+  margin-bottom: 100px;
+  padding: 10px;
 }
 
 .about .content .prog {
   width: 80%;
   height: 5px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 85px;
+  margin-bottom: 60px;
   position: relative;
   background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
 }
@@ -609,11 +614,11 @@ header .container nav ul li a {
     -moz-transform: translatex(0px);
     -ms-transform: translatex(-0px);
     -o-transform: translatex(-0px);
-    white-space: nowrap;
+    width: 100%;
   }
   .about .content .prog {
     width: 80%;
-    margin: 90px 30px;
+    margin: 60px auto;
   }
 }
 /* End About */
@@ -622,6 +627,7 @@ header .container nav ul li a {
 .tesrimonials {
   min-height: 100vh;
   background-color: var(--bg-color);
+  padding-bottom: 100px;
 }
 
 .tesrimonials .container {
@@ -650,7 +656,7 @@ header .container nav ul li a {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   max-width: 80px;
-  top: 0 ;
+  top: 0;
   transform: translate(-100%, 0%);
   left: 100%;
   -webkit-transform: translate(-100%, 0%);
@@ -663,7 +669,6 @@ header .container nav ul li a {
   margin-bottom: 10px;
   color: white;
 }
-
 
 .tesrimonials .container .box .rate {
   color: #07b9ff;
@@ -711,7 +716,7 @@ header .container nav ul li a {
   font-size: 35px;
   line-height: 49px;
   font-weight: 600;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .blog .container .left p {
@@ -721,19 +726,19 @@ header .container nav ul li a {
   margin-bottom: 50px;
 }
 
-.blog .container .left a {  
+.blog .container .left a {
   color: white;
   position: relative;
   letter-spacing: 10px;
-  font-size: 14px ;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 400;
 }
 
 .blog .container .left a::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: -10px ;
+  bottom: -10px;
   left: 0;
   width: 50%;
   height: 1px;
@@ -758,15 +763,12 @@ header .container nav ul li a {
   margin-bottom: 50px;
   align-items: center;
   border-bottom: 1px solid var(--text-color);
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
-
 
 .blog .container .right .card:last-of-type {
   border-bottom: none;
-
 }
-
 
 .blog .container .right .card img {
   max-width: 250px;
@@ -780,7 +782,7 @@ header .container nav ul li a {
 
 .blog .container .right .card .content span {
   display: inline-block;
-  margin-bottom: 15px ;
+  margin-bottom: 15px;
   font-size: 12px;
   line-height: 15px;
   font-weight: 400;
@@ -789,7 +791,7 @@ header .container nav ul li a {
 }
 
 .blog .container .right .card .content span.active {
-  color: #12c2e9
+  color: #12c2e9;
 }
 
 .blog .container .right .card .content h3 {
@@ -823,11 +825,97 @@ header .container nav ul li a {
   }
 }
 /* End Blog */
+
+/* Start blog Page style */
+.Blog {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  position: relative;
+  padding-top: 100px;
+}
+
+.Blog::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 70%;
+  height: 3px;
+  background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+  z-index: 1;
+}
+
+.Blog .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 100px;
+}
+
+.Blog .container .col.up {
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+}
+
+.Blog .container .col .card {
+  padding: 30px 40px;
+  background-color: #141518;
+  color: white;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.Blog .container .col .card h3 {
+  font-weight: 500;
+  line-height: 31px;
+  font-size: 22px;
+}
+
+.Blog .container .col .card p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+.Blog .container .col .card img {
+  width: 100%;
+}
+
+.Blog .container .col .card .tag span {
+  display: inline-block;
+  padding: 12px 15px;
+  margin-right: 7px;
+  margin-top: 30px;
+  font-size: 12px;
+  background-color: #191b1f;
+}
+
+@media (max-width: 600px) {
+  .Blog .container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .Blog .container .col .card {
+    text-align: center;
+    padding: 28px 0px;
+  }
+}
+/* Start blog Page style */
+
 /* start contact */
 .contact {
   min-height: 40vh;
   background-color: var(--bg-color);
-  padding-bottom: var(--padding) ;
+  padding-bottom: var(--padding);
 }
 
 .contact .container {
@@ -844,24 +932,22 @@ header .container nav ul li a {
 .contact .container form .info input {
   border: none;
   background-color: #141518;
-  border-bottom: 2px solid #12c2e9 ;
+  border-bottom: 2px solid #12c2e9;
   outline: none;
   margin-right: 30px;
   padding: 20px;
   color: white;
-
 }
 
 .contact .container form .info input:last-of-type {
   margin-right: 0px;
-
 }
 
 .contact .container form textarea {
   color: white;
   border: none;
   background-color: #141518;
-  border-bottom: 2px solid #12c2e9 ;
+  border-bottom: 2px solid #12c2e9;
   outline: none;
   padding: 20px;
   margin-bottom: 30px;
@@ -915,13 +1001,13 @@ footer::after {
 
 footer .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
 }
 
-footer .container  h4 {
+footer .container h3 {
   font-size: 30px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 footer .container .row {

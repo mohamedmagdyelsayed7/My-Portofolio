@@ -1,0 +1,116 @@
+body {
+  direction: rtl;
+}
+
+header .container nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+header .container nav ul li {
+  padding: 11px;
+}
+
+.landing .container .content .img {
+  margin-left: 100px;
+}
+
+@media (max-width: 991px) {
+  .landing .container .content .img {
+    margin-left: 0px;
+  }
+}
+
+.landing .container .footer .left .box:first-child {
+  margin-right: 0px;
+}
+
+.landing .container .footer .left .box span {
+  margin-left: 10px;
+}
+
+.landing .container .footer .left .box .text span {
+  font-size: 17px;
+}
+.landing .container .footer .right {
+  flex-direction: row-reverse;
+}
+
+.landing .container .footer .right .text span:last-child a {
+  font-size: 11px;
+}
+
+.features .container .card i {
+  margin-left: 30px;
+}
+
+.about .content h2 {
+  font-size: 60px;
+  font-weight: 600;
+  transform: translatex(150px);
+  -webkit-transform: translatex(150px);
+  -moz-transform: translatex(150px);
+  -ms-transform: translatex(150px);
+  -o-transform: translatex(150px);
+}
+
+@media (max-width: 991px) {
+  .about .content h2 {
+    font-size: 36px;
+    transform: translatex(0px);
+    -webkit-transform: translatex(0px);
+    -moz-transform: translatex(0px);
+    -ms-transform: translatex(-0px);
+    -o-transform: translatex(-0px);
+    width: 100%;
+  }
+}
+
+.tesrimonials .container .box img {
+  max-width: 70px;
+  transform: translate(0%, 0%);
+  left: 0;
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+}
+
+.blog .container .left a {
+  letter-spacing: 2px;
+}
+
+.blog .container .right .card img {
+  margin-left: 30px;
+}
+
+.contact .container form .info input {
+  margin-left: 30px;
+  margin-right: 0px;
+}
+
+.contact .container form .info input:last-of-type {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media (max-width: 991px) {
+  .contact .container form .info input {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+footer .container .col2 .row img {
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+footer .container .col1 .content .row i {
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+footer .container .col1 .content .row .text p {
+  font-size: 15px;
+}
